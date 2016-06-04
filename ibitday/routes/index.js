@@ -6,4 +6,8 @@ router.get('/', function(req, res, next) { 'use strict';
   res.render('index', { title: 'ibitday' });
 });
 
+router.get('/:id', function(req, res, next) { 'use strict';
+  res.render(req.params.id, { title: 'ibitday' });
+});
+
 module.exports = router;
